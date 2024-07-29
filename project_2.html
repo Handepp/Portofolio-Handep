@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI Monitoring dan kendali handep</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand fs-1 fw-bold" href="#">Handep</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto fw-semibold">
+                  <a class="nav-link  fs-4" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link fs-4" href="#about">About</a>
+                  <a class="nav-link fs-4" href="#Skill">Skills</a>
+                  <a class="nav-link fs-4" href="#project">Project</a>
+                  <a class="nav-link fs-4" href="#sertifikat">Sertifikat</a>
+                  <!-- <a class="nav-link fs-4" href="#">Contact</a> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="project_2 container">
+        <div class="title text-center mb-5">
+            <!-- <h1>Sistem Monitoring Arus air, Suhu dan humiditas, serta sistem kendali motor DC berbasis Graphical User Interface menggunakan MQTT</h1> -->
+            <h1>Sistem Monitoring dan Kendali Berbasis GUI</h1>
+            <h5>Sebuah sistem yang dirancang untuk memantau laju air, suhu, dan humiditas serta mengendalikan motor DC melalui antarmuka GUI dengan menggunakan protokol komunikasi MQTT</h5>
+        </div>
+
+        <div class="d-flex flex-column row-gap-3 align-items-center justify-content-center mb-5">
+            <div class="row gap-3 justify-content-center">
+                <img class="img-fluid col-4" src="static/img/project-section/GUI/gui_head_1.jpg" alt="">
+                <img class="img-fluid col-4" src="static/img/project-section/GUI/gui_head_2.jpg" alt="">
+            </div>
+            <div class="row gap-3 justify-content-center">
+                <img class="img-fluid col-4" src="static/img/project-section/GUI/gui_head_3.jpg" alt="">
+                <img class="img-fluid col-4" src="static/img/project-section/GUI/Ruangan normal.png" alt="">
+            </div>
+        </div>
+
+        <div class="project-paragraph">
+            Proyek ini saya kerjakan ketika sedang magang di PT. Syergie Indo Prima sebagai bagian dari pemenuhan nilai mata kuliah kerja praktek industri (KPI). 
+            Selama magang, saya dibimbing untuk mengembangkan sebuah sistem monitoring dan kendali yang dapat 
+            diimplementasikan ke dalam GUI.
+            <br>
+            <br>
+            Pada GUI ini dilakukan monitoring terhadap laju air, suhu, dan humiditas, serta mengendalikan motor DC. Sistem ini dibangun menggunakan beberapa komponen utama, yaitu:
+            <ul>
+                <li>
+                    <strong>Bahasa Pemrograman Python</strong>:  Digunakan untuk menerima data dari Arduino IDE yang dikirimkan melalui MQTT, lalu menghubungkannya dengan GUI (Back-end)
+                </li>
+                <li>
+                   <strong>Bahasa Antarmuka QML</strong>: Digunakan untuk membangun tampilan Graphical User Interface (GUI) yang interaktif dan mudah digunakan (Front-end).
+                </li>
+                <li>
+                    <strong>ESP32 sebagai Mikrokontroler</strong>: Berperan sebagai otak dari sistem yang mengumpulkan data dari sensor dan mengirim serta menerima data melalui MQTT. Logika pada ESP32 dibuat di Arduino IDE.
+                </li>
+                <li>
+                    <strong>Sensor Laju Air</strong>: Digunakan untuk mengukur laju aliran air dalam sistem.
+                </li>
+                <li>
+                    <strong>Sensor DHT11</strong>: Sensor ini digunakan untuk mengukur suhu dan kelembaban udara.
+                </li>
+                <li>
+                    <strong>Motor Driver L298N dan Motor DC</strong>: Digunakan untuk mengendalikan pergerakan motor DC berdasarkan perintah yang diterima dari GUI.
+                </li>
+                <li>
+                    <strong>Protokol Komunikasi MQTT</strong>: Digunakan untuk komunikasi antara perangkat keras (ESP32 dan sensor) dengan GUI, memungkinkan pengiriman data secara real-time.  
+                </li>
+                <br>
+                <br>
+                <img class="img-fluid col-8" src="static/img/project-section/GUI/gui_blok.png" alt="">
+            </ul>
+
+            
+            
+            
+            
+            
+            
+            
+        </div>
+
+    </section>
+
+    
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

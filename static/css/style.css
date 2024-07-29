@@ -20,16 +20,20 @@ body{
 
 
 
-
 section{
     padding: 128px 0px 32px 0px;
     /* padding: 64px 128px; */
     /* padding-top: 128px; */
-    
 }
 
+.project_2{
+    padding: 64px 32px;
+}
+
+
+
 #home{
-    background-color: #f1faee;
+    /* background-color: #f1faee; */
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -49,12 +53,28 @@ section{
     section{
         padding: 64px 32px;
     }
+
+    footer{
+        margin-top: 32px!important;
+    }
+
+    .footer-text{
+        margin-bottom: 12px;
+    }
+    .footer-text p{
+        font-size: 16px;
+    }
+    
+}
+
+#Skill h1{
+    color: #1d3557;
 }
 
 header{
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 1000;
     background-color: #f1faee;
     transition: background-color 0.4s ease-in-out;
 }
@@ -85,9 +105,9 @@ header.scrolled .navbar-toggler-icon{
     color: #1d3557;
 }
 
-.navbar-nav > a{
+/* .navbar-nav > a{
     font-size: 16px;
-}
+} */
 
 @media (max-width: 992px){
     .navbar-a{
@@ -147,6 +167,7 @@ a{
 }
 
 .about-p{
+    text-align: justify;
     font-size: 20px;
 }
 
@@ -168,9 +189,15 @@ a{
 
 .about-exp-items-detail h4{
     margin-top: 10px;
+    /* font-size: 24px; */
+    font-weight: bold;
 }
 
-.skills-border {
+.border-div{
+    border-bottom: 2px solid #1d3557;
+}
+
+.section-border {
     width: 50px;
     height: 4px;
     background-color: #457b9d;
@@ -294,12 +321,18 @@ a{
 }
   
 .card-title {
-    font-size: 20px; 
+    /* font-size: 20px;  */
+    font-weight: bold;
     margin-top: 15px;
 }
   
 .card-text {
+    text-align: justify;
     font-size: 16px; 
+}
+
+#project .border-div{
+    color: red;
 }
 
 .modal {
@@ -349,7 +382,7 @@ a{
     cursor: pointer;
   }
   
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 767px){
     .modal-content {
       width: 100%;
     }
@@ -380,3 +413,13 @@ footer p{
     }
 }
 
+
+/* Proyek html */
+
+.project-paragraph{
+    text-align: justify;
+}
+
+.project-paragraph li{
+    text-align: justify;
+}
