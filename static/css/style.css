@@ -1,5 +1,5 @@
 *{
-    font-family: 'Montserrat';
+    font-family: Poppins, sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -416,10 +416,23 @@ footer p{
 
 /* Proyek html */
 
+.title h1{
+    font-weight: bold;
+}
+
+.title h5{
+    opacity: 0.6;
+}
+
 .project-paragraph{
     text-align: justify;
 }
 
 .project-paragraph li{
     text-align: justify;
+}
+
+.img-size{
+    max-width: 75%;
+    height: auto;
 }

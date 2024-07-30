@@ -82,22 +82,52 @@
                 <li>
                     <strong>Protokol Komunikasi MQTT</strong>: Digunakan untuk komunikasi antara perangkat keras (ESP32 dan sensor) dengan GUI, memungkinkan pengiriman data secara real-time.  
                 </li>
-                <br>
-                <br>
-                <div class="d-flex justify-content-center">
-                    <img class="img-fluid col-8" src="static/img/project-section/GUI/gui_blok.png" alt="">
-                </div>
-                
             </ul>
 
+            <br>
+            <p> Selama proses pengembangan, saya menggunakan ESP32 untuk mengumpulkan data dari sensor laju air dan sensor DHT11. 
+                Data ini kemudian dikirim ke Python melalui protokol MQTT, kemudian dikirim lagi ke GUI yang dibangun dengan QML.  
+                GUI ini memungkikan menampilkan data perangkat keras yang diterima secara real-time. 
+                Selain itu, GUI ini memungkinkan pengguna untuk mengendalikan kecepatan dan arah motor DC. 
+                Perintah dikirim melalui GUI (QML) ke Python, kemudian diteruskan ke ESP32 melalui protokol MQTT.</p>
+
+            <div class="d-flex">
+                <div class="row justify-content-center">
+                    <img class="img-fluid col-xl-6" src="static/img/project-section/GUI/gui_blok.png" alt="">
+                    <img class="img-fluid col-xl-6" src="static/img/project-section/GUI/transmisi.png" alt="">
+                </div>
+            </div>
+
+
+            <!-- <div class="d-flex justify-content-center">
+                <img class="img-fluid col-4" style="max-width: 50%; height: 50%;" src="static/img/project-section/GUI/waterf.jpg" alt="">
+                <img class="img-fluid col-4" src="static/img/project-section/GUI/dht.jpg" alt="">
+                <div class="align-items-center justify-content-center">
+                    <img class="img-fluid col-4" src="static/img/project-section/GUI/motor.jpg" alt="">
+                    <img class="img-fluid col-4" src="static/img/project-section/GUI/l298n.jpg" alt="">
+                </div> 
+                    
+            </div> -->
             
-            
-            
-            
-            
-            
-            
+            <br>
+            <p>lalalal</p>
+
+            <div class="d-flex  ">
+                <div class="row row-gap-3 justify-content-center ">
+                    <img class="img-fluid col-6" src="static/img/project-section/GUI/menit 2.png" onclick=img_modal(event) alt="">
+                    <img class="img-fluid col-6" src="static/img/project-section/GUI/Ruangan normal.png" onclick=img_modal(event) alt="">
+                    <img class="img-fluid col-6" src="static/img/project-section/GUI/dc2.png" onclick=img_modal(event) alt="">
+                </div>
+            </div>
+
         </div>
+
+        <div id="myModal" class="modal">
+        
+            <span class="close">&times;</span>
+          
+            <img class="modal-content" id="img01">
+          </div>
 
     </section>
 
