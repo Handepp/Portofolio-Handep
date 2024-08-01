@@ -39,12 +39,26 @@ function img_modal(e){
     
 }
 
-document.addEventListener('scroll',() => {
-    const header=document.querySelector('header');
-    if(window.scrollY > 0){
-        header.classList.add('scrolled')
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('header'); // Menggunakan querySelector
+    const navbar = document.querySelector('.navbar-toggler');
+
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+        navbar.classList.remove('navbar-up')
+    } else {
+        header.classList.remove('scrolled');
+        navbar.classList.add('navbar-up')
     }
-    else{
-        header.classList.remove('scrolled')
-    }
-})
+});
+
+// document.getElementById('contactForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     const form = event.target;
+//     const name = form.name.value;
+//     const email = form.email.value;
+//     const message = form.message.value;
+//     const mailtoLink = `mailto:your-email@example.com?subject=Contact from ${name}&body=${message}%0D%0A%0D%0AFrom: ${name} (${email})`;
+    
+//     window.location.href = mailtoLink;
+// });

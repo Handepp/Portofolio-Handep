@@ -30,11 +30,32 @@ section{
     padding: 64px 32px;
 }
 
+#landing{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1d3557,  #f1faee);
+}
 
 
-#home{
+#home, .navbar{
     /* background-color: #f1faee; */
     animation: fadeIn 1s ease-in-out;
+}
+
+#home h1{
+    font-size: 64px;
+    color: #f1faee;
+}
+
+#home h3{
+    font-size: 40px;
+    opacity: 0.6;
+    color: #f1faee;
+}
+
+#home p{
+    font-size: 24px;
+    opacity: 0.6;
 }
 
 @media (max-width: 767px){
@@ -64,6 +85,10 @@ section{
     .footer-text p{
         font-size: 16px;
     }
+
+    #about{
+        margin-top: 50px;
+    }
     
 }
 
@@ -75,34 +100,39 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #f1faee;
+    background-color: #1d3557;
     transition: background-color 0.4s ease-in-out;
 }
 
 header.scrolled{
-    background-color: #1d3557;
-    color: #f1faee;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    background-color: #f1faee;
+    color: #1d3557;
     transition: background-color 0.4s ease-in-out;
 }
 
 header.scrolled a{
-    color: #f1faee;
+    color: #1d3557;
 }
 
-header.scrolled .navbar-toggler{
+.navbar-up{
     background-color: #f1faee;
+}
+
+/* header.scrolled .navbar-toggler{
+    background-color: #1d3557;
 }
 
 header.scrolled .navbar-toggler-icon{
-    background-color: #f1faee;
-}
+    background-color: #1d3557;
+} */
 
 .navbar a:hover{
     color: #457b9d;
 }
 
 .navbar a{
-    color: #1d3557;
+    color: #f1faee;
 }
 
 /* .navbar-nav > a{
@@ -126,17 +156,7 @@ header.scrolled .navbar-toggler-icon{
     border-radius: 75px;
 }
 
-#home h1{
-    font-size: 64px;
-}
 
-#home h3{
-    font-size: 40px;
-}
-
-#home p{
-    font-size: 24px;
-}
 
 a{
     text-decoration: none;
@@ -387,6 +407,60 @@ a{
       width: 100%;
     }
   }
+
+#contact h2{
+    font-size: 64px;
+}
+
+.contact-email{
+    font-size: 24px;
+    font-weight: bold;
+    color: #457b9d;
+}
+
+.contact-item{
+    background-color: #e0e4e5;
+    /* border: 2px solid #1d3557; */
+    border-radius: 20px;
+}
+
+.form-control {
+    border: 2px solid #1d3557; 
+    background-color: transparent;
+    /* padding: 10px; 
+    border-radius: 5px;  */
+}
+
+.form-control:focus {
+    border-color: #1d3557; /* Warna border saat elemen dalam fokus */
+}
+
+.btn-2{
+    border-radius: 10px;
+    background-color: #1d3557;
+    color: #f1faee;
+
+}
+
+@media (max-width: 991px){
+    
+    #contact h2{
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #contact > div{
+        text-align: center;
+    }
+
+
+    .contact-form{
+        margin-top: 48px;
+    }
+
+
+}
+
 
 
 footer{
