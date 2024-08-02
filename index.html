@@ -625,48 +625,36 @@
         </div>
         
 
-        <div class="col-lg-6 contact-form">
-          <form class="d-flex flex-column" action=""></form>
+        <div class="col-lg-6 ">
           <h3 class=" mb-4">Kirim saya pesan 💬</h3>
-          <div class="d-flex gap-1 justify-content-between">
-            <div class="form-floating mb-3 col-6">
-              <input type="Nama" class="form-control" id="floatingNama" placeholder="name@example.com">
-              <label for="floatingNama">Nama Lengkap</label>
+          <form class="d-flex flex-column" id="contact-form" action="">
+            <div class="d-flex gap-1 justify-content-between">
+              <div class="form-floating mb-3 col-6">
+                <input type="text" class="form-control" id="floatingNama" name="nama" placeholder="Nama Lengkap">
+                <label for="floatingNama">Nama Lengkap</label>
+              </div>
+              <div class="form-floating mb-3 col-6">
+                <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Email">
+                <label for="floatingEmail">Email</label>
+              </div>
             </div>
-            <div class="form-floating mb-3 col-6">
-              <input type="Email" class="form-control" id="floatingEmail" placeholder="Email">
-              <label for="floatingEmail">Email</label>
+              
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingSubject" name="subject" placeholder="Subject">
+              <label for="floatingSubject">Subject</label>
             </div>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="Subject" class="form-control" id="floatingSubject" placeholder="Subject">
-            <label for="floatingSubject">Subject</label>
-          </div>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 250px"></textarea>
-            <label for="floatingTextarea2">Pesan</label>
-          </div>
+  
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="message" style="height: 250px"></textarea>
+              <label for="floatingTextarea2">Pesan</label>
+            </div>
+          
+            <button type="submit" class="btn btn-2 mt-3 py-3 px-4">Kirim Pesan</button>
 
-          <button type="submit" class="btn btn-2 mt-3 py-3 px-4">Kirim Pesan</button>
+          </form>
         </div>
       </div>
     </section>
-
-    <!-- <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          
-          <button type="submit">Send</button>
-      </form>
-  </section> -->
 
     <footer id="footer" >
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">

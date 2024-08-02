@@ -58,6 +58,12 @@ section{
     opacity: 0.6;
 }
 
+@media (max-width: 530px){
+    #home h1{
+        font-size: 56px;
+    }
+}
+
 @media (max-width: 767px){
     #home, .my-about-text{
         text-align: center;
@@ -454,7 +460,7 @@ a{
     }
 
 
-    .contact-form{
+    #contact-form{
         margin-top: 48px;
     }
 

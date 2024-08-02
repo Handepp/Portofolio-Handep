@@ -52,13 +52,15 @@ document.addEventListener('scroll', () => {
     }
 });
 
-// document.getElementById('contactForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const form = event.target;
-//     const name = form.name.value;
-//     const email = form.email.value;
-//     const message = form.message.value;
-//     const mailtoLink = `mailto:your-email@example.com?subject=Contact from ${name}&body=${message}%0D%0A%0D%0AFrom: ${name} (${email})`;
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.nama.value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+    console.log("pesan terkirim");
+    const mailtoLink = `mailto:handep789@gmail.com?subject=${subject}&body=${message}%0D%0A%0D%0AFrom: ${name} (${email})`;
     
-//     window.location.href = mailtoLink;
-// });
+    window.location.href = mailtoLink;
+});
