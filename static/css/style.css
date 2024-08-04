@@ -58,9 +58,17 @@ section{
     opacity: 0.6;
 }
 
+
+
 @media (max-width: 530px){
     #home h1{
         font-size: 56px;
+    }
+}
+
+@media (max-width: 464px){
+    #home h1{
+        font-size: 48px;
     }
 }
 
