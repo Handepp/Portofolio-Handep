@@ -27,6 +27,11 @@ function img_modal(e){
     let sertif_child = sertif_parent.children[2]
     let span = document.getElementsByClassName("close")[0];
 
+    console.log(sertif)
+    // console.log(sertif_parent)
+    console.log(sertif_child)
+
+
 
     sertif_child.style.display = "block";
     modalImg.src = sertif.src
@@ -35,6 +40,25 @@ function img_modal(e){
 
     span.onclick = function() {
         sertif_child.style.display = "none";
+    }
+    
+}
+
+function img_modal_project(e){
+    let gambar = e.target
+    let gambar_modal = document.getElementById("myModal")
+    // let sertif_parent = sertif.closest('#sertifikat');
+    // let sertif_child = sertif_parent.children[2]
+    let span = document.getElementsByClassName("close")[0];
+
+
+    gambar_modal.style.display = "block";
+    modalImg.src = gambar.src
+    // captionText.innerHTML = this.alt;
+
+
+    span.onclick = function() {
+        gambar_modal.style.display = "none";
     }
     
 }
