@@ -529,9 +529,37 @@ footer p{
     height: auto;
 }
 
+.table-performa-2{
+    display: none;
+}
+
+.table-performa-1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.table-performa-1 th{
+    background-color: #1d3557;
+    color: white;
+}
+
+.table-performa-1 th , .table-performa-1 td{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 @media (min-width: 992px){
     .project-paragraph p, .project-paragraph li{
         font-size: 20px;
+    }
+
+    .table-performa-2{
+        display: block;
+    }
+
+    .table-performa-1{
+        display: none;
     }
 
 
@@ -545,3 +573,34 @@ footer p{
 .img-project:hover{
     transform: scale(1.05);
 }
+
+.project-paragraph table{
+    border: 1px solid;
+}
+
+th, td {
+    border: 2px solid black; 
+
+    padding: 10px;
+  }
+
+@media (min-width: 767px) {
+    .dep-img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 991px) {
+    .dep-img {
+        height: 345px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .dep-img {
+        height: 416px;
+    }
+}
+
+
+  

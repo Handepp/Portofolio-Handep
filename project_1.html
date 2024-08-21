@@ -65,6 +65,240 @@
         </div> -->
 
         <div class="project-paragraph">
+          <div>
+            <p>[Latar belakang project, peran dalam projek]</p>
+          </div>
+          
+          <div class="mb-5">
+            <p>[Ilustrasi projek]</p>
+            <div class="d-flex">
+              <div class="row justify-content-center">
+                <img class="col-4" src="static/img/project-section/SAVI/ilustration.png" alt="ilustrasi">
+                <img class="col-8" src="static/img/project-section/SAVI/flowchart.png" alt="flow-chart">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <p>[Wahana SAVI]</p>
+            <div class="row justify-content-center">
+              <img class="col-4" src="static/img/project-section/SAVI/wahana_1.png" alt="">
+              <img class="col-4" src="static/img/project-section/SAVI/wahana_2.png" alt="">
+              <img class="col-4" src="static/img/project-section/SAVI/wahana_3.png" alt="">
+              <img class="col-8" src="static/img/project-section/SAVI/skematik.png" alt="">
+            </div>
+
+          </div>
+
+          <div>
+            <p>[Blok diagram]</p>
+            <div class="row justify-content-center align-items-center">
+              <img class="col-8" src="static/img/project-section/SAVI/blok_sistem.png" alt="flow-chart">
+              <p class="col-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo doloremque in sint accusamus ipsum placeat molestias qui excepturi earum.</p>
+            </div>
+            
+          </div>
+
+          <div class="mb-5 ">
+            <p>Pembuatan chatbot</p>
+            <div class="d-flex justify-content-center">
+              <img class="col-8 " src="static/img/project-section/SAVI/flow_chatbot.png" alt="flow-chart">
+            </div>
+            
+            <div>
+              <ul>
+                <li><strong>Interaksi robot dengan manusia</strong>: Pengguna dapat berbincang-bincang dengan wahana layaknya manusia, seperti bertanya-tanya pada wahana.</li>
+                <li><strong>Informasi lokasi</strong>: Pengguna dapat bertanya mengenai lokasi wahana berada.</li>
+                <li><strong>Informasi daya wahana</strong>: Pengguna dapat mengetahui daya atau baterai wahana.</li>
+                <li><strong>Informasi kecepatan wahana</strong>: Pengguna dapat mengetahui kecepatan wahana saat bergerak.</li>
+                <li><strong>Informasi suhu sistem wahana</strong>: Pengguna dapat mengetahui suhu pada sistem wahana.</li>
+                <li><strong>Pengambilan gambar</strong>: Pengguna dapat mengambil gambar melalui kamera yang ada pada wahana dan ditampilkan melalui chatbot.</li>
+                <li><strong>Kendali wahana</strong>: Wahana dapat dikendalikan melalui chatbot, seperti bergerak maju, mundur, berhenti, berbelok, putar balik, mengatur kecepatan wahana, dan menyalakan serta mematikan wahana.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div>
+            <!-- modelling (kalo bisa) -->
+          </div>
+
+          <p>Hasil pelatihan dengan hyperparameter</p>
+
+          <div class="mb-5">
+            <div class="row mb-3">
+              <div class="table-performa-1">
+                <table cellspacing="0" cellpadding="5" class="text-center">
+                  <tr>
+                    <th>Hyperparameter</th>
+                    <td>                        
+                      Batch Size=16 <br>
+                      Learning Rate=5e-5 <br>
+                      Epoch=30
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Akurasi Training</th>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <th>Akurasi Validasi</th>
+                    <td>98.34%</td>
+                  </tr>
+                  <tr>
+                    <th>Akurasi Test</th>
+                    <td>99.45%</td>
+                  </tr>
+                  <tr>
+                    <th>Nilai loss Training</th>
+                    <td>0.0082</td>
+                  </tr>
+                  <tr>
+                    <th>Nilai loss Validasi</th>
+                    <td>0.0955</td>
+                  </tr>
+                  <tr>
+                    <th>Nilai loss Test</th>
+                    <td>0.0502</td>
+                  </tr>
+                  <tr>
+                    <th>Waktu Training</th>
+                    <td>2 Menit 55 detik</td>
+                  </tr>
+                  <tr>
+                    <th>Rata-rata Presisi</th>
+                    <td>99.61</td>
+                  </tr>
+                  <tr>
+                    <th>Rata-rata Recall</th>
+                    <td>99.61</td>
+                  </tr>
+                  <tr>
+                    <th>Rata-rata F-1 Score</th>
+                    <td>99.58</td>
+                  </tr>
+                  
+                </table>
+              </div>
+              
+              <div class="table-performa-2">
+                <table  cellspacing="0" cellpadding="5" class="col-12 text-center">
+                  <thead>
+                    <tr style="background-color: #1d3557; color: white;">
+                      <th rowspan="2">Hyperparameter</th>
+                      <th colspan="10">Performa</th>
+                    </tr>
+                    <tr style="background-color: #1d3557; color: white;">
+                      <th>Train acc</th>
+                      <th>Val acc</th>
+                      <th>Train acc</th>
+                      <th>Train loss</th>
+                      <th>Val loss</th>
+                      <th>Test Loss</th>
+                      <th>Time</th>
+                      <th>Avg prec</th>
+                      <th>Avg Recall</th>
+                      <th>Avg F1-score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Batch Size=16 <br>
+                        Learning Rate=5e-5 <br>
+                        Epoch=30
+                      </td>
+                      <td>100%</td>
+                      <td>98.34%</td>
+                      <td>99.45%</td>
+                      <td>0.0082</td>
+                      <td>0.0955</td>
+                      <td>0.0502</td>
+                      <td>2m 55s</td>
+                      <td>99.61</td>
+                      <td>99.61</td>
+                      <td>99.58</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <div>
+              <!-- Hasil evaluasi dan learning -->
+              <p>Hasil Learning Curve</p>
+              <div class="row justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-6 text-center">
+                  <img class="img-fluid mb-3" src="static/img/project-section/SAVI/lc_acc.png" alt="">
+                  <figcaption>Learning curve akurasi hasil pelatihan model</figcaption>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-center mt-sm-4 mt-md-0">
+                  <img class="img-fluid mb-3" src="static/img/project-section/SAVI/lc_loss.png" alt="">
+                  <figcaption>Learning curve nilai loss hasil pelatihan model</figcaption>
+                </div>
+                
+              </div>
+            </div>
+            
+
+          </div>
+
+          <div> 
+            <p>deployment</p>
+            <div>
+              <div class="row justify-content-center align-items-center">
+
+                <div class="col-12 col-md-6 col-lg-6 text-center">
+                  <img class="img-fluid dep-img mb-3" src="static/img/project-section/SAVI/deploy_pub.png" alt="">
+                  <figcaption>Learning curve akurasi hasil pelatihan model</figcaption>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-center mt-sm-4 mt-md-0">
+                  <img class="img-fluid dep-img mb-3" src="static/img/project-section/SAVI/deploy_wahana.png" alt="">
+                  <figcaption>Learning curve nilai loss hasil pelatihan model</figcaption>
+                </div>
+              
+              </div>
+            </div>
+            <!-- deployment -->
+          </div>
+
+          <div>
+            <div class="row justify-content-center text-center">
+              <!-- <div class="col-5 ratio ratio-1x1">
+                <iframe src="https://www.youtube.com/embed/ZDIbRPyupis" title="YouTube video" allowfullscreen></iframe>
+              </div> -->
+
+              <iframe class="col-5" height="300" src="https://www.youtube.com/embed/ZDIbRPyupis" title="YouTube video" allowfullscreen></iframe>
+
+              <div class="col-5">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, adipisci!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div>
+            <div>
+              <div class="row justify-content-center ">
+                <div class="ratio ratio-1x1">
+                  <iframe src="https://www.youtube.com/embed/ZDIbRPyupis" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <iframe class="col-5"  src="https://www.youtube.com/embed/ZDIbRPyupis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="col-5" >[FITUR LOKASI]</p>
+                 <div class="col-5">
+                  <video width="200" controls>
+                    <source src="static/img/project-section/SAVI/video/Lokasi_full.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div> 
+              </div>
+
+            </div>
+             Hasil dengan video sesuai fitur 
+          </div> -->
+
+
+          
+          
 
         </div>
 
